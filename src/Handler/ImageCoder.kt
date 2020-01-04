@@ -1,15 +1,20 @@
 package Handler
-import java.awt.image.*
 
-class ImageCoder(var mode: String = "enc", var password: String = "00000000") {
-//    fun Code(image: BufferedImage): BufferedImage{
-//        var tmp = 1
-//        for(i in image.minX..image.width.minus(1)) {
-//            for (j in image.minY..image.height.minus(1)) {
-//                image.setRGB(i, j, tmp * image.getRGB(i, j).plus(password.toInt()))
-//                tmp *= -1
-//            }
-//        }
-//       return image
+import java.awt.image.*
+import javax.crypto.spec.IvParameterSpec
+import javax.crypto.spec.SecretKeySpec
+
+class ImageCoder(private var mode: String = "enc", private var password: String = "00000000") {
+//    initialize main cryptography parameters
+    init {
+        val transformation = "AES/CBC/PKCS5Padding"
+        val algorithm = "AES"
+        val ivspec = IvParameterSpec(password.toByteArray())
+        val key = SecretKeySpec(password.toByteArray(), algorithm)
+    }
+
+    fun сode(image: BufferedImage): BufferedImage {
+
+        return image
     }
 }
