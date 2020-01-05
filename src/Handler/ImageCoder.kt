@@ -1,20 +1,36 @@
 package Handler
 
 import java.awt.image.*
+import javax.crypto.Cipher
 import javax.crypto.spec.IvParameterSpec
 import javax.crypto.spec.SecretKeySpec
 
-class ImageCoder(private var mode: String = "enc", private var password: String = "00000000") {
-//    initialize main cryptography parameters
-    init {
-        val transformation = "AES/CBC/PKCS5Padding"
-        val algorithm = "AES"
-        val ivspec = IvParameterSpec(password.toByteArray())
-        val key = SecretKeySpec(password.toByteArray(), algorithm)
+class ImageCoder(private var mode: String = "enc", private var password: String = "00000000") : Coder {
+
+//     main cryptography parameters
+    private val transformation = "AES/CBC/PKCS5Padding"
+    private val algorithm = "AES"
+
+    override fun code(image: BufferedImage): Array<Any> {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        val codeResult = CodeResult.NONE
+        val codedImage = image
+
+//        val ivspec = IvParameterSpec(password.toByteArray())
+//        val key = SecretKeySpec(password.toByteArray(), algorithm)
+//
+//        val cipher = Cipher.getInstance("AES/CBC/PKCS5Padding")
+//        cipher.init(Cipher.ENCRYPT_MODE, key, ivspec)
+
+
+        return arrayOf(codedImage, codeResult)
     }
 
-    fun сode(image: BufferedImage): BufferedImage {
+    override fun code(listOfImages: List<BufferedImage>): Array<Any> {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        var codeResult = CodeResult.NONE
+        var resultList = listOfImages
 
-        return image
+        return arrayOf(resultList, codeResult)
     }
 }
