@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6af1a1b2-6721-444e-83d7-a9229ca6b257" name="Default Changelist" comment="create image coder class and initialize body.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Handler/Coder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handler/Coder.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Handler/ImageCoder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handler/ImageCoder.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Handler/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handler/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -120,22 +118,22 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="432" height="440" key="DebuggerActiveHint/0.0.1366.738@0.0.1366.738" timestamp="1578129495727" />
-    <state width="1323" height="182" key="GridCell.Tab.0.bottom" timestamp="1578260637079">
+    <state width="1323" height="182" key="GridCell.Tab.0.bottom" timestamp="1578261346820">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="182" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1578260637079" />
-    <state width="1323" height="182" key="GridCell.Tab.0.center" timestamp="1578260637079">
+    <state width="1323" height="182" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1578261346820" />
+    <state width="1323" height="182" key="GridCell.Tab.0.center" timestamp="1578261346820">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="182" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1578260637079" />
-    <state width="1323" height="182" key="GridCell.Tab.0.left" timestamp="1578260637078">
+    <state width="1323" height="182" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1578261346820" />
+    <state width="1323" height="182" key="GridCell.Tab.0.left" timestamp="1578261346820">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="182" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1578260637078" />
-    <state width="1323" height="182" key="GridCell.Tab.0.right" timestamp="1578260637079">
+    <state width="1323" height="182" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1578261346820" />
+    <state width="1323" height="182" key="GridCell.Tab.0.right" timestamp="1578261346820">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="182" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1578260637079" />
+    <state width="1323" height="182" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1578261346820" />
     <state width="1323" height="227" key="GridCell.Tab.1.bottom" timestamp="1578259997650">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -170,12 +168,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/Handler/ImageCoder.kt</url>
-          <line>26</line>
+          <line>19</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/Handler/ImageCoder.kt</url>
-          <line>49</line>
+          <line>42</line>
           <option name="timeStamp" value="42" />
         </line-breakpoint>
       </breakpoints>
