@@ -1,8 +1,8 @@
 package Handler
 
-import java.awt.image.BufferedImage
+import java.io.File
 
 interface Coder {
-    open fun code(image: BufferedImage) : Array<Any>
-    open fun code(listOfImages: List<BufferedImage>) : Array<Any>
+    fun code(image: File) : Array<Any>
+    fun code(listOfImages: List<File>) : Array<Any>
 }
