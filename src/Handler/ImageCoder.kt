@@ -21,7 +21,9 @@ class ImageCoder(private var mode: String = "enc", private var password: String 
 //
 //        val cipher = Cipher.getInstance("AES/CBC/PKCS5Padding")
 //        cipher.init(Cipher.ENCRYPT_MODE, key, ivspec)
-
+//    encrypt
+        
+//    val encryptedBase64 = Base64.getEncoder().encode(cipher.doFinal(fileContent))
 
         return arrayOf(codedImage, codeResult)
     }
