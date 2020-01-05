@@ -1,38 +1,69 @@
 package Handler
 
-import java.awt.image.*
+import java.awt.image.BufferedImage
+import java.io.ByteArrayInputStream
+import java.io.ByteArrayOutputStream
+import java.lang.Exception
+import java.util.*
 import javax.crypto.Cipher
 import javax.crypto.spec.IvParameterSpec
 import javax.crypto.spec.SecretKeySpec
+import javax.imageio.ImageIO
 
-class ImageCoder(private var mode: String = "enc", private var password: String = "00000000") : Coder {
 
-//     main cryptography parameters
+class ImageCoder(private var mode: String = "enc", private var password: String) : Coder {
+
+    //     main cryptography parameters
     private val transformation = "AES/CBC/PKCS5Padding"
     private val algorithm = "AES"
 
     override fun code(image: BufferedImage): Array<Any> {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-        val codeResult = CodeResult.NONE
-        val codedImage = image
-
-//        val ivspec = IvParameterSpec(password.toByteArray())
-//        val key = SecretKeySpec(password.toByteArray(), algorithm)
-//
-//        val cipher = Cipher.getInstance("AES/CBC/PKCS5Padding")
-//        cipher.init(Cipher.ENCRYPT_MODE, key, ivspec)
-//    encrypt
-        
-//    val encryptedBase64 = Base64.getEncoder().encode(cipher.doFinal(fileContent))
-
-        return arrayOf(codedImage, codeResult)
+        var resultImage: BufferedImage = BufferedImage(0,0,0)
+//        image to byte[]
+        val baos = ByteArrayOutputStream()
+        ImageIO.write(image, "jpg", ByteArrayOutputStream())
+        baos.flush()
+        val fileContent = baos.toByteArray()
+        baos.close()
+//        create ivspec, key
+        val ivspec = IvParameterSpec(password.toByteArray())
+        val key: SecretKeySpec
+        try {
+            key = SecretKeySpec(password.toByteArray(), algorithm)
+        }
+        catch(exc: Exception){
+            return arrayOf(resultImage, CodeResult.WRONG_KEY_LENGTH)
+        }
+//        create and init cipher
+        val cipher = Cipher.getInstance(transformation)
+        cipher.init(if(mode == "enc") Cipher.ENCRYPT_MODE
+                    else Cipher.DECRYPT_MODE,
+                    key, ivspec)
+//        encrypt(decrypt) by cipher and convert to(from) base 64
+        val result: ByteArray
+        result = if(mode == "enc")
+            Base64.getEncoder().encode(cipher.doFinal(fileContent))
+        else {
+            try {
+                cipher.doFinal(Base64.getDecoder().decode(fileContent))
+            } catch (exc: Exception) {return arrayOf(resultImage, CodeResult.WRONG_DECRYPT_KEY)}
+        }
+//        save result in image
+        val bis = ByteArrayInputStream(result)
+        resultImage = ImageIO.read(bis)
+//        return result
+        return arrayOf(resultImage, CodeResult.SUCCESS)
     }
 
     override fun code(listOfImages: List<BufferedImage>): Array<Any> {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-        var codeResult = CodeResult.NONE
-        var resultList = listOfImages
-
-        return arrayOf(resultList, codeResult)
+        var resultList = mutableListOf<BufferedImage>()
+        for(image in listOfImages) {
+            val resultImageArray = code(image)
+            if(resultImageArray[1] == CodeResult.SUCCESS)
+                resultList.add(resultImageArray[0] as BufferedImage)
+            else
+                return arrayOf(resultList, resultImageArray[1])
+        }
+        return arrayOf(resultList, CodeResult.SUCCESS)
     }
 }

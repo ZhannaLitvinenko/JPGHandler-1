@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="6af1a1b2-6721-444e-83d7-a9229ca6b257" name="Default Changelist" comment="create image coder class and initialize body.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/directory check/file.txt" beforeDir="false" afterPath="$PROJECT_DIR$/directory check/file.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/directory check/findImg.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Handler/CodeResult.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handler/CodeResult.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Handler/ImageCoder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handler/ImageCoder.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Handler/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handler/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,25 +158,16 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="691" height="377" key="XDebugger.FullValuePopup/0.0.1366.738@0.0.1366.738" timestamp="1578131613802" />
-    <state x="339" y="165" key="run.anything.popup" timestamp="1578094222214">
+    <state x="339" y="165" key="run.anything.popup" timestamp="1578251216214">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1578094222214" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1578238998583">
+    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1578251216214" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1578251352294">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1578238998583" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1578251352294" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/Handler/Main.kt</url>
-          <line>27</line>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="JetRunConfigurationType">
         <watch expression="color" />
