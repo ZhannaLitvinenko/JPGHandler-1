@@ -17,14 +17,11 @@ class ImageCoder(private var mode: String = "enc", private var password: String)
         var resultArray = byteArrayOf()
         val fileContent = image.readBytes()
 //        create ivspec, key
-        val ivspec = IvParameterSpec(password.toByteArray())
-        val key: SecretKeySpec
-        try {
-            key = SecretKeySpec(password.toByteArray(), algorithm)
-        }
-        catch(exc: Exception){
+        if(password.length != 16)
             return arrayOf(resultArray, CodeResult.WRONG_KEY_LENGTH)
-        }
+
+        val ivspec = IvParameterSpec(password.toByteArray())
+        val key = SecretKeySpec(password.toByteArray(), algorithm)
 //        create and init cipher
         val cipher = Cipher.getInstance(transformation)
         cipher.init(if(mode == "enc") Cipher.ENCRYPT_MODE
