@@ -1,13 +1,10 @@
 package Handler
 
-import java.awt.image.BufferedImage
 import java.io.File
-import javax.imageio.ImageIO
 
 fun help(){
     println("There are such commands:\n" +
             "/path_[directory path] - the directory where picture(s) is(are)\n" +
-//            "/path /f [image_path] - the full path to one image\n" +
             "/enc_[password] - to encode picture by password\n" +
             "/dec_[password] - to decode picture by password\n" +
             "/ex - to exit")
