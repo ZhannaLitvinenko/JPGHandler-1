@@ -4,8 +4,13 @@
     <list default="true" id="6af1a1b2-6721-444e-83d7-a9229ca6b257" name="Default Changelist" comment="create image coder class and initialize body.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/directory check/file.txt" beforeDir="false" afterPath="$PROJECT_DIR$/directory check/file.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/directory check/findImg.bat" beforeDir="false" afterPath="$PROJECT_DIR$/directory check/findImg.bat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JPGHandler/Handler/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JPGHandler/Handler/MainKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Handler/Main.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resultOfCode.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resultOfDecode.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/some photo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Handler/ImageCoder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handler/ImageCoder.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Handler/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Handler/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,22 +135,22 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="432" height="440" key="DebuggerActiveHint/0.0.1366.738@0.0.1366.738" timestamp="1578129495727" />
-    <state width="1323" height="26" key="GridCell.Tab.0.bottom" timestamp="1578306578619">
+    <state width="1323" height="182" key="GridCell.Tab.0.bottom" timestamp="1578307814137">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="26" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1578306578619" />
-    <state width="1323" height="26" key="GridCell.Tab.0.center" timestamp="1578306578619">
+    <state width="1323" height="182" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1578307814137" />
+    <state width="1323" height="182" key="GridCell.Tab.0.center" timestamp="1578307814136">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="26" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1578306578619" />
-    <state width="1323" height="26" key="GridCell.Tab.0.left" timestamp="1578306578619">
+    <state width="1323" height="182" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1578307814136" />
+    <state width="1323" height="182" key="GridCell.Tab.0.left" timestamp="1578307814136">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="26" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1578306578619" />
-    <state width="1323" height="26" key="GridCell.Tab.0.right" timestamp="1578306578619">
+    <state width="1323" height="182" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1578307814136" />
+    <state width="1323" height="182" key="GridCell.Tab.0.right" timestamp="1578307814137">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="26" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1578306578619" />
+    <state width="1323" height="182" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1578307814137" />
     <state width="1323" height="26" key="GridCell.Tab.1.bottom" timestamp="1578306578619">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -166,10 +171,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="691" height="377" key="XDebugger.FullValuePopup/0.0.1366.738@0.0.1366.738" timestamp="1578131613802" />
-    <state x="339" y="165" key="run.anything.popup" timestamp="1578251216214">
+    <state x="339" y="165" key="run.anything.popup" timestamp="1578307296916">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1578251216214" />
+    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1578307296916" />
     <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1578258060523">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
